@@ -1,0 +1,350 @@
+@font-face {
+    font-family: squadaOne;
+    src: url(assets/fonts/SquadaOne-Regular.ttf);
+}
+
+body, html {
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+  }
+
+a {
+    text-decoration: none;
+}
+
+.title {
+    font-size: 40px;
+    font-weight: 600;
+    margin: 0;
+    text-align: start;
+    color: white;
+    margin-top: 20px;
+}
+
+.baseline {
+    margin-bottom: 50px;
+}
+
+.text {
+    font-size: 16px;
+    color: white;
+    text-align: start;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 24px;
+}
+
+.last {
+    padding-bottom: 50px;
+}
+
+.container-logo {
+    display: flex;
+    justify-content: center;
+}
+
+.logo {
+    width: 50%;
+    max-width: 300px;
+
+}
+
+.container-landing {
+    z-index: -1;
+    position: relative;
+    background: radial-gradient(ellipse at top, rgb(87.13, 22.51, 22.51), rgb(10.7, 54.61, 98.81)),
+            radial-gradient(ellipse at bottom, rgb(10.7, 54.61, 98.81), cyan);
+    width: 100vw;
+    padding-bottom: 15vw;
+    box-shadow: 0 5px 15px lightblue, 0 9px 25px grey;
+    z-index: 2;
+    border-radius: 0 0 300px 300px;
+
+    .container {
+        display: flex;
+        flex-wrap: wrap;
+        margin-left: auto;
+    }
+
+    .text-container {
+        width: 80%;
+        text-align: center;
+        margin: auto;
+    }
+
+    .image-profil {
+        width: 300px;
+        height: 300px;
+        margin: auto;
+        border-radius: 1000px;
+    }
+}
+
+.footer {
+    color: black;
+    list-style: none;
+    font-family: squadaOne;
+    text-align: center;
+}
+
+.container-mentions {
+    display: flex;
+    justify-content: space-around;
+    padding: 0;
+}
+
+.circle {
+    width: 100px;
+    height: 100px;
+    border-radius: 1000px;
+    background-color: white;
+    box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, .3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "SquadaOne";
+    font-size: 16px;
+    text-transform: uppercase;
+    text-align: center;
+}
+#techno {
+    position: relative;
+    z-index: 100;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -50px;
+}
+
+.container-technos {
+    z-index: -1;
+    background-image: url(assets/images/vector-techno.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100vw;
+    display: grid;
+    grid-template-columns: repeat(2, 2fr );
+    grid-gap: 50px;
+    grid-auto-rows: minmax(100px, auto);
+    margin-top: -100px;
+    padding-bottom: 100px;
+    padding-top: 200px;
+    border-radius: 0 0 100px 0;
+    
+
+    .l1 {
+        grid-column: 1 / 2;
+        grid-row: 1;
+        
+    }
+    .l2 {
+        grid-column: 2 / 2;
+        grid-row: 1;
+    }
+    .l3 {
+        grid-column: 1 / 2;
+        grid-row: 2;
+    }
+    .l4 {
+        grid-column: 2 / 2;
+        grid-row: 2;
+    }
+    .l5 {
+        grid-column: 1 / 2;
+        grid-row: 3;
+    }
+    .l6 {
+        grid-column: 2 / 2;
+        grid-row: 3;
+    }
+    
+}
+
+
+.logo-techno {
+    max-width: 100px;
+    justify-self: center;
+}
+
+#realisations {
+    position: relative;
+    z-index: 100;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -100px;
+    
+}
+
+.container-realisations{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: #183257;
+    padding: 50px 0;
+    border-radius: 0 30px 0 0;
+    box-shadow: 0 15px 35px lightblue, 0 5px 15px grey;
+}
+
+.btn-position{
+    background-color: black;
+}
+
+
+.text-color {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 10px;
+}
+
+
+.container-realisations{
+    border-radius: 0 50px 0 0;
+    width: 100%;
+    padding-bottom: 100px;
+}
+
+#contact {
+    position: relative;
+    z-index: 100;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -30px;
+}
+
+.container-contact {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background:radial-gradient(ellipse at bottom, rgb(82.13, 22.51, 22.51), rgb(10.7, 54.61, 90.81)),
+               radial-gradient(ellipse at top, rgb(10.7, 54.61, 98.81) , rgb(10.7, 54.61, 98.81));
+    width: 100vw;
+    padding-bottom: 15vw;
+    box-shadow: 0 5px 15px lightblue, 0 9px 25px grey;
+    z-index: 2;
+    border-radius: 0 0 100px 100px;
+    margin-top: -40px;
+}
+
+.mail {
+    text-align: center;
+}
+
+.contact-image {
+    margin-top: 150px;
+    width: 320px;
+}
+
+
+
+@media screen and (min-width: 640px) {
+    
+    .image-profil {
+        min-width: 32vw;
+        min-height: 30vw;
+        margin: auto;
+    }
+
+    .text {
+        font-size: 18px;
+    }
+
+    .title {
+        font-size: 34px;
+    }
+
+    .text-container {
+        width: 80%;
+        max-width: 40%;
+    }
+
+    .circle {
+        width: 200px;
+        height: 200px;
+        font-size: 24px;
+    }
+    
+    #techno {
+        margin-top: -40px;
+    }
+
+    .container-logo{
+        width: 95%;
+        margin-left: auto;
+        justify-content: start;
+    }
+
+    .container-technos {
+        background-image: url(assets/images/vector-techno.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100vw;
+        display: grid;
+        grid-template-columns: repeat(3, 2fr );
+        grid-gap: 50px;
+        grid-auto-rows: minmax(100px, auto);
+        padding: 200px 0;
+        margin-top: -120px;
+    
+        
+    
+        .l1 {
+            grid-column: 1 / 2;
+            grid-row: 1;
+            
+        }
+        .l2 {
+            grid-column: 2 / 3;
+            grid-row: 1;
+        }
+        .l3 {
+            grid-column: 3 / 3;
+            grid-row: 1;
+        }
+        .l4 {
+            grid-column: 1 / 2;
+            grid-row: 2;
+        }
+        .l5 {
+            grid-column: 2 / 3;
+            grid-row: 2;
+        }
+        .l6 {
+            grid-column: 3 / 3;
+            grid-row: 2;
+        }
+     
+        .logo-techno {
+            max-width: 250px;
+            margin-top: 200px;
+        }
+    }
+
+    .container-realisations {
+        padding-top: 90px;
+        margin-top: -50px;
+    }
+
+    .container-contact {
+        padding-bottom: 150px;
+        margin: -30px;
+    }
+
+    .container-mentions {
+        width: 60%;
+        margin: auto;
+        padding: 80px 0;
+    }
+
+    .contact-image {
+        width: 400px;
+    }
+   
+}
+
+
+
