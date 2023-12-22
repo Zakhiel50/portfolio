@@ -84,6 +84,7 @@ class Carousel {
     }
 
     next() {
+        
         this.gotoItem(this.currentItem + this.slidesToScroll);
     }
     
@@ -155,13 +156,8 @@ document.addEventListener("DOMContentLoaded", function() {
     new Carousel(document.querySelector("#carousel1"), {
         
         slidesVisible: 3,
-        slideToScroll: 2
+        slideToScroll: 1,
+        loop: true
     })
 
-})
-new Carousel(document.querySelector("#carousel1"), {
-        
-    slidesVisible: 3,
-    slideToScroll: 1,
-    loop: true
 })

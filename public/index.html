@@ -1,89 +1,137 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Welcome to Firebase Hosting</title>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Luc Rigaud</title>
+    <link rel="icon" type="image/png" href="assets/images/favicon-LR.jpg"/>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="stylesheet" type="text/css" href="carousel.css">
+    <link rel="fonts" href="assets/fonts/SquadaOne-Regular.ttf">
 
-    <!-- update the version number as needed -->
-    <script defer src="/__/firebase/10.7.1/firebase-app-compat.js"></script>
-    <!-- include only the Firebase features as you need -->
-    <script defer src="/__/firebase/10.7.1/firebase-auth-compat.js"></script>
-    <script defer src="/__/firebase/10.7.1/firebase-database-compat.js"></script>
-    <script defer src="/__/firebase/10.7.1/firebase-firestore-compat.js"></script>
-    <script defer src="/__/firebase/10.7.1/firebase-functions-compat.js"></script>
-    <script defer src="/__/firebase/10.7.1/firebase-messaging-compat.js"></script>
-    <script defer src="/__/firebase/10.7.1/firebase-storage-compat.js"></script>
-    <script defer src="/__/firebase/10.7.1/firebase-analytics-compat.js"></script>
-    <script defer src="/__/firebase/10.7.1/firebase-remote-config-compat.js"></script>
-    <script defer src="/__/firebase/10.7.1/firebase-performance-compat.js"></script>
-    <!-- 
-      initialize the SDK after all desired features are loaded, set useEmulator to false
-      to avoid connecting the SDK to running emulators.
-    -->
-    <script defer src="/__/firebase/init.js?useEmulator=true"></script>
+    <script src="index.js" async></script>
+</head>
 
-    <style media="screen">
-      body { background: #ECEFF1; color: rgba(0,0,0,0.87); font-family: Roboto, Helvetica, Arial, sans-serif; margin: 0; padding: 0; }
-      #message { background: white; max-width: 360px; margin: 100px auto 16px; padding: 32px 24px; border-radius: 3px; }
-      #message h2 { color: #ffa100; font-weight: bold; font-size: 16px; margin: 0 0 8px; }
-      #message h1 { font-size: 22px; font-weight: 300; color: rgba(0,0,0,0.6); margin: 0 0 16px;}
-      #message p { line-height: 140%; margin: 16px 0 24px; font-size: 14px; }
-      #message a { display: block; text-align: center; background: #039be5; text-transform: uppercase; text-decoration: none; color: white; padding: 16px; border-radius: 4px; }
-      #message, #message a { box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24); }
-      #load { color: rgba(0,0,0,0.4); text-align: center; font-size: 13px; }
-      @media (max-width: 600px) {
-        body, #message { margin-top: 0; background: white; box-shadow: none; }
-        body { border-top: 16px solid #ffa100; }
-      }
-    </style>
-  </head>
-  <body>
-    <div id="message">
-      <h2>Welcome</h2>
-      <h1>Firebase Hosting Setup Complete</h1>
-      <p>You're seeing this because you've successfully setup Firebase Hosting. Now it's time to go build something extraordinary!</p>
-      <a target="_blank" href="https://firebase.google.com/docs/hosting/">Open Hosting Documentation</a>
-    </div>
-    <p id="load">Firebase SDK Loading&hellip;</p>
+<body>
 
-    <script>
-      document.addEventListener('DOMContentLoaded', function() {
-        const loadEl = document.querySelector('#load');
-        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
-        // // The Firebase SDK is initialized and available here!
-        //
-        // firebase.auth().onAuthStateChanged(user => { });
-        // firebase.database().ref('/path/to/ref').on('value', snapshot => { });
-        // firebase.firestore().doc('/foo/bar').get().then(() => { });
-        // firebase.functions().httpsCallable('yourFunction')().then(() => { });
-        // firebase.messaging().requestPermission().then(() => { });
-        // firebase.storage().ref('/path/to/ref').getDownloadURL().then(() => { });
-        // firebase.analytics(); // call to activate
-        // firebase.analytics().logEvent('tutorial_completed');
-        // firebase.performance(); // call to activate
-        //
-        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
+    <section class="container-landing center">
+      <header class="container-logo">
+        <img class="logo" src="assets/images/logo2.png" alt="Logo de Luc Rigaud">
+      </header>
+        
+        <div class="container">
+            <div class="text-container center">
+                <p class="title">Hey !!</p>
+                <h1 class="title">Je m’appelle Luc Rigaud</h1>
+                <h2 class="text baseline">Concepteur développeur d’application web</h2>
+                <p class="text">Lors d’une formation de chef de projet digital, j’ai découvert le code et le dev. Depuis je passe mon temps à apprendre le développement web.</p>
+                <p class="text">J’ai commencer avec le HTML5, CSS3 et Javascript(ES6). J’ai ensuite découvert les frameworks React.js et Angular.</p>
+                <p class="text">Je m’éfforce chaque jour à m’améliorer en suivant des tutoriels reconnus par les développeurs seniors, la documentions ainsi que des petits projets qui me servent de défis.</p>
+                <p class="text last">En recherche active d’un stage et d’une alternance pour 2024, je suis disponible sur l’ouest de la france en présentiel et sur tout le territoire français en remote.</p>
+            </div>
+            <img class="image-profil" src="assets/images/luc-rigaud_image.jpg" alt="Photo de Luc Rigaud">
+        </div>
+    </section>
 
-        try {
-          let app = firebase.app();
-          let features = [
-            'auth', 
-            'database', 
-            'firestore',
-            'functions',
-            'messaging', 
-            'storage', 
-            'analytics', 
-            'remoteConfig',
-            'performance',
-          ].filter(feature => typeof app[feature] === 'function');
-          loadEl.textContent = `Firebase SDK loaded with ${features.join(', ')}`;
-        } catch (e) {
-          console.error(e);
-          loadEl.textContent = 'Error loading the Firebase SDK, check the console.';
-        }
-      });
-    </script>
-  </body>
+    <div class="circle" id="techno">mes technos</div>
+
+    <section class="container-technos">
+
+        <img class="logo-techno l1" src="assets/images/logo-html.png" alt="logo-html">
+        <img class="logo-techno l2" src="assets/images/logo-css.png" alt="logo-css">
+        <img class="logo-techno l3" src="assets/images/logo-js.png" alt="logo-javascript">
+        <img class="logo-techno l4" src="assets/images/logo-react.png" alt="logo-react">
+        <img class="logo-techno l5" src="assets/images/logo-angular.png" alt="logo-angular">
+        <img class="logo-techno l6" src="assets/images/logo-mysql.png" alt="logo-mySql">
+
+    </section>
+    <div class="circle" id="realisations">mes réalisations</div>
+
+    <section class="container-realisations">
+      <div class="container">
+
+          <div id="carousel1">
+              
+              <div class="item">
+                <a href="https://pokedex-d1a94.web.app/" target="_blank">
+                  <div class="item-image">
+                      <img src="assets/images/pokemon.jpg" alt="pokédex">
+                  </div>
+                  <div class="item-body">
+                      <div class="item-title">
+                          Pokédex
+                      </div>
+                      <div class="item-description">
+                          Un pokédex réalisé avec angular 17
+                      </div>
+                  </div>
+                </a>
+              </div>
+              <div class="item">
+                <a href="https://zakhiel50.github.io/TicTacToe/" target="_blank">
+                  <div class="item-image">
+                      <img src="assets/images/tic-toe.jpg" alt="morpion">
+                  </div>
+                  <div class="item-body">
+                      <div class="item-title">
+                          Tic-Tac-Toe
+                      </div>
+                      <div class="item-description">
+                          Un morpion réalisé en javascript vanilla.
+                      </div>
+                  </div>
+                </a>
+              </div>
+              <div class="item">
+                <a href="https://zakhiel50.github.io/ToDo-List/" target="_blank">
+                  <div class="item-image">
+                      <img src="assets/images/toDoList.jpg" alt="ToDO list">
+                  </div>
+                  <div class="item-body">
+                      <div class="item-title">
+                          ToDo List
+                      </div>
+                      <div class="item-description">
+                          Une toDo List réalisée en javascript Vanilla
+                      </div>
+                  </div>
+                </a>
+              </div>
+              <div class="item">
+                <a href="https://zakhiel50.github.io/Cluedo-checkList/" target="_blank">
+                  <div class="item-image">
+                      <img src="assets/images/cluedo.jpg" alt="Cluedo">
+                  </div>
+                  <div class="item-body">
+                      <div class="item-title">
+                          Cluedo
+                      </div>
+                      <div class="item-description">
+                          Une feuille d'enquête du jeu Cluedo réalisée en javascript Vanilla
+                      </div>
+                  </div>
+                </a>
+              </div>
+              
+          </div>
+      </div>
+    </section>
+    <div class="circle" id="contact">contact</div>
+    <section class="container-contact">
+      <img class="contact-image" src="assets/images/mobile.svg" alt="un téléphone contenant le numéro de Luc Rigaud">
+      <div class="container-mail">
+        <img class="contact-image" src="assets/images/mail.svg" alt="une image de mails">
+        <p class="text mail">lucrigaud50@gmail.com</p>
+      </div>
+    </section>
+
+    <footer>
+      <ul class="container-mentions">
+        <li class="text footer">mentions légales</li>
+        <li class="text footer">données personelles</li>
+      </ul>
+      <p class="text footer">Portfolio créer par Luc Rigaud</p>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+</body>
 </html>
